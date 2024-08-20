@@ -24,7 +24,6 @@ Run from terminal, change directory to the folder that this app.py is in,
 enter, then flask run, enter
 
 Name: Pete Coutros
-Course: SDEV300 7380
 Date: 04/23/2023
 Modified: 04/30/2023
 Modified 2: 05/07/2023
