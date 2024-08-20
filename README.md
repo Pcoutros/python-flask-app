@@ -1,7 +1,8 @@
 # python-flask-app
 A Webapp built using Flask
 
-## Desctiption to come soon
+## Complete Desctiption to come soon
+This web application serves as an informative site about my dog, Barley
 
 ## How to Use
 
