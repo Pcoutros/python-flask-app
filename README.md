@@ -5,8 +5,10 @@ A Webapp built using Flask
 
 ## How to Use
 
-1) Clone the repository
-2) Open terminal and change directories to the desired destination
-3) Type: `git clone <repository_url>`
-4) Change directory into the repository name
+1) Clone the repository: `git clone https://github.com/Pcoutros/python-flask-app.git`
+2) Change directory into the repository: `cd python-flask-app`
+3) Create & activate virtual environment:
+    1. `python -m venv env`
+    2. `source env/bin/activate`
+4) Install requirements: `pip install -r requirements.txt`
 5) Run the appliaction using: `flask run`
