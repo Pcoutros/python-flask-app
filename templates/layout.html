@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>{% block title %}{% endblock %}</title>
+        <!--Link stylesheet that all pages will use-->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='site.css')}}" />
+        <!-- add icon link -->
+        <link rel = "icon" href = "{{ url_for('static', filename='logo.jpeg')}}" type = "image/x-icon"/>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+            <ul class=flashes>
+            {% for category, message in messages %}
+                <li class="{{ category }}">{{ message }}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+        {% endwith %}
+    </head>
+
+    <body>
+        <!--Create a navigation bar at the top of each page-->
+        <div class="navbar">
+            <a href="{{ url_for('menu') }}" class="navbar-brand">Menu</a>
+            <a href="{{ url_for('home') }}" class="navbar-item">Home</a>
+            <a href="{{ url_for('about') }}" class="navbar-item">About</a>
+            <a href="{{ url_for('contact') }}" class="navbar-item">Contact</a>
+            <a href="{{ url_for('logout')}}" class="navbar-item">Logout</a>
+            <a href="{{ url_for('update') }}" class="navbar-item">Update Password</a>
+        </div>
+
+        <div class="body-content">
+            {% block content %}
+            {% endblock %}
+            <hr/>
+            <footer>
+                <!--Display Datetime on each page at footer-->
+                {{ date.strftime("%A, %B %d, %Y at %X") }}
+                <p>&copy; 2023</p>
+            </footer>
+        </div>
+    </body>
+</html>

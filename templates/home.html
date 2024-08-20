@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+{% block title %}
+My Dog: Barley
+{% endblock %}
+{% block content %}
+<h1>Everything You Need to Know About Barley</h1>
+    <!--Show Breed list (unordered) with links to wiki-->
+	<h2 id="option1">Breed</h2>
+		<ul>
+			<li>50% <a href="https://en.wikipedia.org/wiki/Husky">Husky</a></li>
+			<li>37.5% <a href="https://en.wikipedia.org/wiki/Pyrenean_Mountain_Dog">Great Pyrenees</a></li>
+			<li>12.5% <a href="https://en.wikipedia.org/wiki/Labrador_Retriever">Lab</a></li>
+		</ul>
+    <!--Show and use variable for age so that it changes (not hardcoded)-->
+	<h2 id="option2">Age</h2>
+		<p>{{ age }} years old</p>
+    <!--Show interests with picture links-->
+	<h2 id="option3">Interests</h2>
+		<p><a href="{{url_for('static', filename='Barls.jpeg')}}">Barley</a> enjoys chewing on sticks and 
+            bones but her favorite activity is chasing squirrels. She enjoys running through the woods and 
+            will tolerate swimming although it takes her a bit to get used to the 
+            <a href="{{url_for('static', filename='water.jpeg')}}">water</a>. Hiking/Camping are 
+            the perfect ways to allow Barley to enjoy her interests.</p>
+    <!--Show Personailty-->
+	<h2 id="option4">Personality</h2>
+		<p>Barley is a self sufficient dog who needs no one, but she recognizes that others love her and 
+            will accept their love... in small amounts. She prefers "butt-scratches" over pets on the head
+            or neck area. She has been accurately described as a Wolf-Cat as she is curious, independent, 
+            loves to explore/hunt, and is highly intelligent. While Barley 
+            is often seen doing her own thing at dog parks, she will occasionally play with dogs she has deemed worthy.
+            Her playful side is a blast to witness! She loves to run as fast as she can and play "tag" with the
+            other dogs.</p>
+    <!--Show ordered list of favorite foods-->
+    <h2 id="option5">Favorite Foods</h2>
+        <h3>Human Foods</h3>
+            <ol>
+                <li>Steak</li>
+                <li>French Fries</li>
+                <li><a href="{{url_for('static', filename='pizza.mov')}}">Pizza</a></li><!--Link for Barley eating pizza-->
+            </ol>
+        <h3>Dog Treats</h3>
+            <ol>
+                <li>Cow Femur Bones</li>
+                <li>Milk Bones</li>
+                <li>Duck Flavored Biscuits</li>
+            </ol>
+    <h2 id="option6">Events</h2>
+        <table>
+            <caption>Camping Trips</caption>
+            <tr>
+                <th>Dates</th>
+                <th>Locations</th>
+                <th>Days</th>
+                <th>Picture</th>
+            </tr>
+            <tr>
+                <td>09/05/20</td>
+                <td>Chattanooga, TN</td>
+                <td>4</td>
+                <td><img src="/static/stone_fort.jpeg" alt="Stone Fort"></td>
+            </tr>
+            <tr>
+                <td>04/28/22</td>
+                <td>LaFayette, GA</td>
+                <td>3</td>
+                <td><img src="/static/rocktown_climb.jpeg" alt="Rocktown"></td>
+            </tr>
+            <tr>
+
+                <td>03/10/23</td>
+                <td>Chapel Hill, TN</td>
+                <td>2</td>
+                <td><img src="/static/henry_horton_camp.jpeg" alt="Henry Horton"></td>
+            </tr>
+            <tr>
+                <td>04/01/23</td>
+                <td>Wartburg, TN</td>
+                <td>3</td>
+                <td><img src="/static/obed_climb.jpeg" alt="Obed"></td>
+            </tr>
+        </table>    
+{% endblock %}

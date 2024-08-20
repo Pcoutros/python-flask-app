@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--Does not extend layout so nav bar is hidden-->
+<html>
+    <head>
+        <title>Register</title>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+            <ul class=flashes>
+            {% for category, message in messages %}
+                <li class="{{ category }}">{{ message }}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+        {% endwith %}
+        <link rel = "icon" href = "{{ url_for('static', filename='logo.jpeg')}}" type = "image/x-icon"/>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='site.css')}}" />
+    </head>
+    <body>
+        <h1>Create an Account</h1>
+        <form action="/register" method="post">
+            <div>
+                <label for="username">Username</label>
+                <input type="text" name="username">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password">
+                <h3>Password Requirements:</h3>
+                <ul>
+                    <li>at least 12 characters long</li>
+                    <li>at least one upper case letter</li>
+                    <li>at least one lower case letter</li>
+                    <li>at least one digit</li>
+                    <li>at least one special character</li>
+                    <li>cannot contain ':'</li>
+                    <li>cannot be found in a list of common passwords</li>
+                </ul>
+            </div>
+            </div>
+            <div>
+                <input type="submit" value="Register">
+            </div>
+            <div>
+                <p>Already a member? <a href="/">Login</a></p>
+            </div>
+        </form>
+        <hr/>
+        <footer>
+            <!--Display Datetime on each page at footer-->
+            {{ date.strftime("%A, %B %d, %Y at %X") }}
+            <p>&copy; 2023</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--Does not extend layout so nav bar is hidden-->
+<html>
+    <head>
+        <title>Login</title>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+            <ul class=flashes>
+            {% for category, message in messages %}
+                <li class="{{ category }}">{{ message }}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+        {% endwith %}
+        <link rel = "icon" href = "{{ url_for('static', filename='logo.jpeg')}}" type = "image/x-icon"/>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='site.css')}}" />
+    </head>
+    <body>
+        <h1>Login to Account</h1>
+        <form action="/login" method="post">
+            <div>
+                <label for="username">Username</label>
+                <input type="text" name="username">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password">
+            </div>
+            <div>
+                <input type="submit" value="Login">
+            </div>
+            <div>
+                <p>Not a member? <a href="register">Create an Account</a></p>
+            </div>
+        </form>
+        <hr/>
+        <footer>
+            <!--Display Datetime on each page at footer-->
+            {{ date.strftime("%A, %B %d, %Y at %X") }}
+            <p>&copy; 2023</p>
+        </footer>
+    </body>
+</html>
