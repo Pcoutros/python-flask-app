@@ -1,0 +1,110 @@
+/* Style the navbar */
+.navbar {
+    background-color: rgb(56, 53, 53);
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    padding: 8px 5px 8px 5px;
+}
+
+/* Style the navbar */
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Style the navbar */
+.navbar-brand {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+/* Style the navbar options */
+.navbar-item {
+    font-variant: small-caps;
+    margin-left: 30px;
+}
+
+/* Style the logout navbar function */
+.navbar-item:nth-child(5){
+    font-variant: small-caps;
+    margin-left: 30px;
+    float: right;
+}
+
+/* Style the update navbar function */
+.navbar-item:nth-child(6){
+    font-variant: small-caps;
+    margin-left: 30px;
+    float: right;
+}
+
+/* Style the body content */
+.body-content {
+    padding: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-size: large;   
+
+}
+
+/* Style the background */
+body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("/static/pawprint.jpeg");
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed; /* added 4/26/23*/
+}
+
+/* Style the images */
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+/* Style the table data */
+td:nth-child(1) {
+    width: 20%;
+}
+
+td:nth-child(2) {
+    width: 20%;
+}
+
+td:nth-child(3) {
+    width: 20%;
+}
+
+td:nth-child(4) {
+    width: 40%;
+}
+
+/* Style the table */
+table, td, th {
+    text-align: center;
+    background-color: #84dbfe; 
+    border: 5px solid #0099cc; 
+    border-collapse: collapse;
+}
+
+/* Style the table caption */
+caption {
+    text-align: left;
+    font-size: 200%;
+}
+
+/* Style the flash messages */
+.flashes {
+    margin: 1em 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+/* Style the success messages */
+.success {
+    color: green;
+  }
+  
+/* Style the error messages */
+  .error {
+    color: red;
+  }
