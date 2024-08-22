@@ -1,4 +1,10 @@
-'''This program generates a simple website using Python Flask module.
+'''
+Name: Pete Coutros
+Date: 04/23/2023
+Modified: 04/30/2023
+Modified 2: 05/07/2023
+
+This program generates a simple website using Python Flask module.
 The website contents are about my dog Barley with different pieces of
 information to view. The site itself is comprised of 4 different pages
 and two forms: register and login. The user cannot access the web pages
@@ -14,19 +20,6 @@ the separater in the text file.)
 MODIFIED: user can now change the password of their account once logged in.
 The passwords are also checked against a common password file and will
 reject any matches. There is also a logger added for failed login attempts.
-
-Note: The VS Code tutorial was followed in creating this program and
-therefore will contain many of the same features (because I liked their
-functionalities not didn't feel the need to 're-invent the wheel'). For
-example, the nav bar at the top is a great feature that I wanted to keep.
-
-Run from terminal, change directory to the folder that this app.py is in,
-enter, then flask run, enter
-
-Name: Pete Coutros
-Date: 04/23/2023
-Modified: 04/30/2023
-Modified 2: 05/07/2023
 '''
 
 # Imports
