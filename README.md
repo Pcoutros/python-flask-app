@@ -2,7 +2,7 @@
 A Webapp built using Flask
 
 ## Complete Desctiption to come soon
-This web application serves as an informative site about my dog, Barley
+This web application serves as an informative site about my dog, Barley, however the front end of this application is not the focus of the project.
 
 ## How to Use
 
