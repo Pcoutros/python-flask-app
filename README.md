@@ -2,7 +2,7 @@
 A Webapp built using Flask
 
 ## Complete Desctiption to come soon
-This web application serves as an informative site about my dog, Barley, however the front end of this application is not the focus of the project.
+This web application serves as an informative site about my dog, Barley, however the front end of this application is not the focus of the project. This project showcases back-end functionality such as account creation, user authentication, form validation, password updates, and secure password storing using SHA-256 hashing. Additionally there are logging mechanisms to track failed log in attempts and sensitive routes are protected with session based authentication. 
 
 ## How to Use
 
