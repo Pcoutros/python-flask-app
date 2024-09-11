@@ -5,7 +5,6 @@ A Webapp built using Flask
 This web application serves as an informative site about my dog, Barley, however the front end of this application is not the focus of the project. This project showcases back-end functionality such as account creation, user authentication, form validation, password updates, and secure password storing using SHA-256 hashing. Additionally there are logging mechanisms to track failed log in attempts and sensitive routes are protected with session based authentication. 
 
 ## How to Use
-
 1) Clone the repository: `git clone https://github.com/Pcoutros/python-flask-app.git`
 2) Change directory into the repository: `cd python-flask-app`
 3) Create & activate virtual environment:
